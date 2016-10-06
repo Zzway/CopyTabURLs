@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Copy All URLs Options</title>
+    <script src="options.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <h1>Format for Title and URL</h1>
+    <ul>
+      <li><code>%text%</code> means Title.</li>
+      <li><code>%url%</code> means URL.</li>
+      <li><code>\t</code> means TAB.</li>
+      <li><code>\n</code> means new line.</li>
+    </ul>
+    <div id="status" style="color:red; display:none;">Options Saved.</div>
+    <input type="text" id="copy_all_urls_format" size="150" />
+    <button id="save">Save</button>
+
+    <h2>Easy Setting</h2>
+    <ul>
+      <li><a href="#" id="simple">Simple format</a></li>
+      <li><a href="#" id="new_line">Title \n URL</a></li>
+      <li><a href="#" id="a_link">HTML a link format</a></li>
+      <li><a href="#" id="excel">Excel format</a></li>
+      <li><a href="#" id="markdown">Markdown format</a></li>
+    </ul>
+  </body>
+</html>

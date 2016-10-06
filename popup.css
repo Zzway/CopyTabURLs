@@ -1,0 +1,24 @@
+body{
+background-color: #f4f1f0;
+margin:3px;
+}
+#all{
+float: right;
+cursor: pointer;
+padding: 3px;
+font-family: Consolas;
+background-color: rgba(245, 245, 220, 0.41);
+margin-bottom: 2px;
+transition: background-color 0.5s;
+background-color: #d6d6d6;
+}
+#all:hover{
+background-color: yellowgreen;
+}
+#target{
+width: 400px;
+height:8em;
+font-family: DejaVu Sans Mono;
+outline-style: none;
+border: none;
+}
