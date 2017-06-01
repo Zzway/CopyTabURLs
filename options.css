@@ -1,0 +1,6 @@
+body{
+    margin-left: 40vw;
+}
+body,#copy_all_urls_format,#save{
+	font-size:1.2em;
+}
