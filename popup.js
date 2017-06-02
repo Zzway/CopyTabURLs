@@ -4,7 +4,7 @@ function copySelectedUrls() {
 			createText(tabs);
 		}else{
 			chrome.tabs.query({currentWindow:true, active:true}, function(tabs) {
-				//console.log("only current");
+				//console.log("copy only current tab");
 				createText(tabs);
 			});
 		}
@@ -36,10 +36,10 @@ function printText(result){
 	target.value = result;
 	target.select();
 	document.execCommand("copy", false, null);
-	var range = target.setSelectionRange();//unSelect
-	range.moveStart( "character", 0) 
-	range.moveEnd( "character", 0); 
-	range.select(); 
+//	var range = target.setSelectionRange(0,1);//unSelect
+//	range.moveStart( "character", 0) 
+//	range.moveEnd( "character", 0); 
+//	range.select(); 
 }
 
 document.addEventListener("DOMContentLoaded", copySelectedUrls);
